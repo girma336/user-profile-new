@@ -1,0 +1,124 @@
+.box__header {
+    padding: 10px 20px;
+    border-bottom: 1px solid lightgrey;
+    /* margin-left: 20px; */
+    font-weight: 700;
+    font-family: Robot;
+    margin: 10;
+    /* background: #ffffff; */
+}
+
+.box__custom-div {
+    /* border: 1px solid lightgray; */
+    border-radius: 12px;
+    margin: 30px auto;
+    box-shadow: 0 2px 4px rgba(252, 250, 250, 0.2);
+    background: #ffffff;
+}
+
+.toggle_box-div {
+    border-radius: 12px;
+    margin: 30px 30px;
+    box-shadow: 0 2px 4px rgba(252, 250, 250, 0.2);
+    background: #ffffff;
+}
+
+.box_detail_user {
+    display: flex;
+}
+
+.detail__div {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    background-color: #ffffff;
+    height: 300px;
+    width: 345px;
+    text-align: left;
+    border-radius: 8px;
+   /* box-shadow: 0 2px 4px rgba(151, 143, 132, 0.927); */
+}
+
+.user_profile_avatar_detail {
+    position: absolute;
+    top: -50px;
+    left: 30px;
+}
+
+
+.create-post {
+  position: fixed;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  z-index: 10000000000000;
+  display: grid;
+  place-items: center;
+  
+}
+
+.create-post-modal {
+    background-color: #ffffff;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    height: auto;
+    z-index: 10000000000000;
+    top: -180px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  z-index: 100000000000000000;
+  font-size: 24px;
+}
+
+.modal__username {
+    padding: 6px 6px 6px 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.modal__contact__info {
+    padding: 6px 6px 6px 20px;
+}
+
+.modal__email_contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 14px;
+    padding: 6px 6px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.modal__email {
+    font-size: 36px;
+    margin-right: 10px;
+  
+}
+
+@media screen and (max-width: 1072px) {
+
+    .toggle_box-div {
+        margin-top: 400px;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .box__custom-div {
+        margin: auto;
+        border: none;
+        border-radius: 0;
+    }
+
+    .toggle_box-div {
+        margin: 400px 0px 30px 0px;
+        border: none;
+        border-radius: 0;
+    }
+}
+

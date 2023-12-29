@@ -1,0 +1,41 @@
+.user_list {
+    position: relative;
+    display: flex;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 1px 0px rgba(217, 215, 211, 0.927);
+
+    /* background: #ffffff; */
+  }
+
+.user_name_text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.9px;
+}
+
+.user__description {
+  text-align: left;
+}
+
+.job_title {
+  color: #a1a1aa;
+  font-size: 16px;
+  margin-top: -5px;
+  line-height: 22.8px;
+}
+
+.user_name_pro {
+  color: #a1a1aa;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.user_profile_avatar {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}

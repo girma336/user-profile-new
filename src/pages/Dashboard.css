@@ -1,0 +1,22 @@
+.container__dashboard {
+    position: relative;
+    margin: 0;
+}
+
+.skeleton {
+    width: 90%;
+    height: 20px;
+}
+
+.error_message {
+    width: 90%;
+    /* height: 100px; */
+    box-shadow: 0 2px 40px rgba(217, 215, 211, 0.927);
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
