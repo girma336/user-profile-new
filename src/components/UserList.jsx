@@ -14,7 +14,7 @@ const UserList = ({ user, handleClick }) => {
     return (
         <div className='user_list' onClick={() => handleClick(user)}>
             {/* <MoreVertIcon /> */}
-            {user.id * 1 <= 15 ? (
+            {user.id * 1 <= 9 ? (
                 <Avatar sx={{ bgcolor: deepOrange[500], width: 60, height: 60 }} className='user_profile_avatar'>{user.profile.firstName.substring(0, 1)}
                     .{user.profile.lastName.substring(0, 1)}</Avatar>
             ) : (<Avatar  sx={{ bgcolor: deepOrange[500], width: 60, height: 60 }} className='user_profile_avatar' alt={user.profile.firstName} src={user.avatar} />)}

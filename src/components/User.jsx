@@ -46,7 +46,7 @@ const User = ({ users }) => {
                             height="140"
                             image={background}
                         />
-                        {toggle?.id * 1 <= 15 ? (
+                        {toggle?.id * 1 <= 9 ? (
                 <Avatar sx={{ bgcolor: deepOrange[500], width: 90, height: 90 }} className='user_profile_avatar_detail'>{toggle?.profile?.firstName.substring(0, 1)}
                     .{toggle?.profile?.lastName.substring(0, 1)}</Avatar>
             ) : (<Avatar  sx={{ bgcolor: deepOrange[500], width: 90, height: 90}} className='user_profile_avatar_detail' alt={toggle?.profile?.firstName} src={toggle?.avatar} />)}
