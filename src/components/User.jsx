@@ -39,7 +39,7 @@ const User = ({ users }) => {
             </Box>
             {toggle && (
                 <div className='detail__div'>
-                    <Card sx={{ maxWidth: 360 }}>
+                    <Card className='card__details'>
                         <CardMedia
                             component="img"
                             alt="green iguana"

@@ -30,9 +30,15 @@
     right: 10px;
     background-color: #ffffff;
     height: 300px;
-    width: 360px;
+    /* width: 100%; */
+    max-width: 1000px;
     text-align: left;
     border-radius: 8px;
+}
+
+.card__details {
+    max-width: 1000px;
+    min-width: 360px;
 }
 
 .user_profile_avatar_detail {
@@ -102,6 +108,12 @@
     .toggle_box-div {
         margin-top: 400px;
     }
+
+    .detail__div {
+        top: 0;
+        right: 0px;
+        left: 30%;
+    }
 }
 
 @media screen and (max-width: 648px) {
@@ -120,6 +132,7 @@
     .detail__div {
         top: 0;
         right: 0;
+        left: 0;
     }
 }
 
