@@ -39,7 +39,7 @@ const User = ({ users }) => {
             </Box>
             {toggle && (
                 <div className='detail__div'>
-                    <Card sx={{ maxWidth: 345 }}>
+                    <Card sx={{ maxWidth: 360 }}>
                         <CardMedia
                             component="img"
                             alt="green iguana"
@@ -55,7 +55,7 @@ const User = ({ users }) => {
                                { toggle?.profile?.firstName} {' '}
                                { toggle?.profile?.lastName}
                             </Typography>
-                            <Typography variant="body2" color="text.secondary" sx={{ lineHeight: '18px', marginTop: '-10px', marginBottom: '10px' }}>
+                            <Typography variant="body2" sx={{ lineHeight: '18px', marginTop: '-10px', marginBottom: '10px' }}>
                             { toggle?.jobTitle}
                             </Typography>
                             <Typography variant="body2" color="text.secondary">

@@ -6,10 +6,13 @@
     align-items: center;
     width: 100%;
     box-shadow: 0 1px 0px rgba(217, 215, 211, 0.927);
-
-    /* background: #ffffff; */
+    cursor: pointer;
   }
 
+.user_list:hover {
+    background: #c6c6f9;
+    color: black;
+}
 .user_name_text {
     font-size: 24px;
     font-weight: 600;
@@ -33,6 +36,15 @@
   margin: 8px 0;
 }
 
+.user_list:hover {
+    background: #c6c6f9;
+    color: black;
+}
+
+.user_list:hover .user_name_pro, .user_list:hover .job_title {
+    /* background: #c6c6f9; */
+    color: black;
+}
 .user_profile_avatar {
   width: 60px;
   height: 60px;
