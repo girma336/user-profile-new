@@ -28,8 +28,8 @@ const User = ({ users }) => {
     return (
         <div className='box_detail_user'>
             <Box sx={{ width: '100%', maxWidth: 671 }} className={`${toggle ? 'toggle_box-div' : 'box__custom-div'}`}>
-                <Typography variant="h6" gutterBottom sx={{ textAlign: 'left' }} className='box__header'>
-                    User
+                <Typography variant="h5" gutterBottom sx={{ textAlign: 'left' }} className='box__header'>
+                    Users{' '}<span style={{ color: 'gray'}}>({users.length})</span>
                 </Typography>
                 <di>
                     {users?.map((user, idx) => (

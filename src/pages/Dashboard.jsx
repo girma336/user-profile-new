@@ -24,24 +24,32 @@ const Dashboard = () => {
       <Skeleton times={10} className="skeleton" />
     )
   }
-  
+
   if (isError) {
     return (
       <div className='error_message'>
-        <Typography variant="h5" sx={{ marginTop: '10px'}} color='text.secondary'>
+        <Typography variant="h5" sx={{ marginTop: '10px' }} color='text.secondary'>
           404!!! Not Found
         </Typography>
-        <Typography variant="h5" sx={{ margin: '10px'}} color='error'>
+        <Typography variant="h5" sx={{ margin: '10px' }} color='error'>
           {message}
         </Typography>
       </div>
     )
   }
 
+
   return (
     <div className='container__dashboard'>
-      <Search setSearchQuery={setSearchQuery} searchQuery={searchQuery}  />
-      <User users={filteredData} />
+      <Search setSearchQuery={setSearchQuery} searchQuery={searchQuery} />
+
+      {filteredData?.length === 0 ? (
+        <div className='error_message' style={{ marginTop: '70px' }}>
+          <Typography variant="h5" sx={{ margin: '10px' }} color='error'>
+            No data to show
+          </Typography>
+        </div>
+      ) : (<User users={filteredData} />)}
     </div>
   )
 }
