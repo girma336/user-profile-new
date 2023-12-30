@@ -1,19 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import Skeleton from '../components/Skeleton';
 import './Dashboard.css';
 import User from '../components/User';
 import Typography from '@mui/material/Typography';
+import Search from '../components/Search';
 
 const Dashboard = () => {
-
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filteredData, setFilteredData] = useState(null);
   const { user, isLoading, isError, message } = useSelector((state) => state.user)
+
+  useEffect(() => {
+    const filteredResults = user.filter((item) =>
+      item.jobTitle.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
+    setFilteredData(filteredResults);
+  }, [searchQuery, user]);
+
   if (isLoading) {
     return (
       <Skeleton times={10} className="skeleton" />
     )
   }
-
+  
   if (isError) {
     return (
       <div className='error_message'>
@@ -29,7 +40,8 @@ const Dashboard = () => {
 
   return (
     <div className='container__dashboard'>
-      <User users={user} />
+      <Search setSearchQuery={setSearchQuery} searchQuery={searchQuery}  />
+      <User users={filteredData} />
     </div>
   )
 }

@@ -4,6 +4,7 @@
     font-weight: 700;
     font-family: Robot;
     margin: 10;
+    margin-top: 90px;
 }
 
 .box__custom-div {
@@ -22,11 +23,12 @@
 
 .box_detail_user {
     display: flex;
+    margin-top: 60px;
 }
 
 .detail__div {
     position: fixed;
-    top: 30px;
+    top: 90px;
     right: 10px;
     background-color: #ffffff;
     height: 300px;
@@ -110,7 +112,7 @@
     }
 
     .detail__div {
-        top: 0;
+        top: 60px;
         right: 0px;
         left: 30%;
     }
@@ -130,7 +132,7 @@
     }
     
     .detail__div {
-        top: 0;
+        top: 60px;
         right: 0;
         left: 0;
     }
