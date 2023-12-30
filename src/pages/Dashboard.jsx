@@ -43,7 +43,7 @@ const Dashboard = () => {
     <div className='container__dashboard'>
       <Search setSearchQuery={setSearchQuery} searchQuery={searchQuery} />
 
-      {filteredData?.length === 0 ? (
+      {filteredData?.length === 0 || user?.length === 0 ? (
         <div className='error_message' style={{ marginTop: '70px' }}>
           <Typography variant="h5" sx={{ margin: '10px' }} color='error'>
             No data to show
